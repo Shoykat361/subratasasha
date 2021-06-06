@@ -1,0 +1,246 @@
+@import 'utiliti.css';
+
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+body{
+    
+    font-family:'poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%,70%  90%,0 100%);
+    
+}
+.container{
+    max-width: 1152px;
+    padding:0  15px;
+    margin:0 auto;
+}
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition:all .3s ease;
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+header nav {
+    padding: 2rem 0;
+}
+header nav .branding{
+    margin: 3rem;
+}
+.here{
+    padding: 3rem 0;
+}
+.here .left img{
+width: 600px;
+height: 550px;
+
+
+
+}
+.here .right{
+    color: var(--pure);
+    text-align: center;
+}
+.here .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.here .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+
+}
+.here .right h1 span{
+    color: red;
+}
+.here .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    color:blueviolet;
+    text-align: right;
+}
+.here.right{
+    margin-top: -9rem;
+}
+section{
+    padding: 6rem 0;
+}
+section.about .about-me-img{
+    height: 550px;
+    width: 400px;
+    
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.about h1 span{
+    color: var(--primary);
+}
+ection.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.about p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+}
+section.about .social{
+    display: flex;
+}
+section.about .social a{
+    background: white;
+    
+   
+    align-items: center;
+    justify-content: center;
+    width: 3px;
+    height: 3px;
+}
+section.about .social  a img{
+    padding: 0.5rem;
+}
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+
+}
+.section-heading span{
+    color: var(--primary);
+}
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+section.services{
+    background: var(--light);
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+
+}
+section.services .card-wrapper .card{
+ background: var(--pure);
+ padding: 3rem 2rem;
+ position: relative;
+ padding-top: 3rem;
+}
+section.services .card-wrapper .card img{
+    position: absolute;
+}
+section.services .card-wrapper .card:hover{
+    background-color: var(--dark);
+}
+section.freelancer{
+    text-align: center;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hi{
+      color: cyan;
+      text-align: center;
+      padding-top: 3rem;
+      
+      
+  }
+  .card-wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-gap: 3rem;
+  }
+  .card-wrapper .card{
+      text-align: center;
+      background-color:whitesmoke;
+  }
+ .card-wrapper .card img{
+      margin-bottom: 2rem;
+
+  }
+  .card-wrapper .card h1{
+      font-weight: 400;
+      margin-bottom: 1rem;
+  }
+  .card-wrapper .card h6{
+      font-size: 1rem;
+      color: var(--ternary);
+      font-weight: 400;
+      margin-bottom: 4rem;
+  }
+  .contact .input-wrap{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 2rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      
+      
+  }
+  .contact .input-wrap-2{
+      display: flex;
+      flex-direction: column;
+  }
+  .contact .input-wrap-2 input{
+      margin-bottom: 2rem;
+      border: 5px solid var(--light);
+      font-size: 1.4rem;
+      
+      
+  }
+  .contact input{
+      padding: 0.5rem;
+      border: 5px solid var(--light);
+      font-size: 1.4rem;
+  }
+  .contact .input-wrap-2 textarea{
+      padding: 0.5rem;
+      border: 10px solid var(--light);
+      font-size: 1rem;
+  }
+  .saha{
+      text-align: center;
+      margin-top: 2rem;
+  }
+  .social{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
